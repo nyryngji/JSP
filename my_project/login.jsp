@@ -76,30 +76,29 @@ a {
 					type="text" name="pwds" placeholder="PASSWORD"><br>
 			</div>
 			<%
-			String idl = request.getParameter("ids");
-			String pwdl = request.getParameter("pwds");
-			String status = "";
+			String idl = request.getParameter("ids"); //입력한 아이디 값 가져오기
+			String pwdl = request.getParameter("pwds"); //입력한 비밀번호 값 가져오기
 			%>
-			<%
+			<% //데이터베이스 연결
 			Connection con = null;
 			PreparedStatement pstmt = null;
 			String driverName = "com.mysql.jdbc.Driver";
 			String dburl = "jdbc:mysql://localhost:3306/univdb";
-			ResultSet rs = null;
+			ResultSet rs = null; 
 
-			try {
+			try { //드라이버 로드
 				Class.forName(driverName);
 				con = DriverManager.getConnection(dburl, "root", "1214");
 				String sql = "select passwd from info where passwd=?";
 				pstmt = con.prepareStatement(sql);
-				pstmt.setString(1, pwdl);
+				pstmt.setString(1, pwdl); 
 
 				rs = pstmt.executeQuery();
 
 				if (rs.next()) {
 					String dbpwd = rs.getString(1);
 
-					if (pwdl.equals(dbpwd)) {
+					if (pwdl.equals(dbpwd)) { //데이터베이스에 있는 비밀번호 정보와 입력한 정보 일치 시 페이지 이동
 				response.sendRedirect("http://localhost:8080/forjsp/movie.html");
 					} else {
 				System.out.println("");
