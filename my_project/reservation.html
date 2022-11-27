@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+#container {
+	text-align: center;
+	width: 1000px;
+	height: 600px;
+	margin: 0 auto;
+}
+
+#header {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#header ul {
+	width: 1000px;
+	height: 50px;
+	margin: 0 auto;
+	padding-left: 0;
+}
+
+#header ul li {
+	width: 25%;
+	height: 50px;
+	color: black;
+	list-style: none;
+	float: left;
+	line-height: 50px;
+	font-size: 17px;
+}
+
+#header input {
+	width: 20%;
+	height: 46px;
+	margin: 20px;
+}
+
+#header select {
+	width: 20%;
+	height: 50px;
+	margin: 20px;
+}
+
+#sheet {
+	text-align: center;
+}
+
+#sheet input {
+	width: 20px;
+}
+
+#screen {
+	padding-right: 50px;
+}
+
+#forticket {
+	width: "100px";
+	height: "60px";
+}
+</style>
+</head>
+<body>
+	<div id="container">
+		<h1>RESERVATION</h1>
+		<hr style="height: 2px; background-color: black;">
+		<div id="header">
+			<ul>
+				<li>영화</li>
+				<li>날짜</li>
+				<li>영화관</li>
+				<li>시간</li>
+			</ul>
+			<form action="ticket.jsp">
+				<select name="title">
+					<option value="1">엔시티</option>
+					<option value="2">데시벨</option>
+					<option value="3">올빼미</option>
+					<option value="4">와칸다</option>
+					<option value="5">월드컵</option>
+					<option value="6">유포자</option>
+					<option value="7">오션스8</option>
+					<option value="8">탑건</option>
+				</select> <input type="date" name="day"> <select name="theater">
+					<option value="1">서울 강남</option>
+					<option value="2">서울 신촌</option>
+					<option value="3">서울 코엑스</option>
+					<option value="4">경기 고양스타필드</option>
+					<option value="5">경기 수원</option>
+					<option value="6">세종</option>
+					<option value="7">부산 해운대</option>
+					<option value="8">전라 순천</option>
+				</select> <select name="hm">
+					<option value="1">10:00</option>
+					<option value="2">11:20</option>
+					<option value="3">13:40</option>
+					<option value="4">16:05</option>
+					<option value="5">18:15</option>
+					<option value="6">19:35</option>
+					<option value="7">20:10</option>
+					<option value="8">22:20</option>
+				</select>
+		</div>
+		<br>
+		<hr>
+		<div id="sheet">
+			<h3>좌석</h3>
+			<img src="images/screen.jpg" width="180px"> <br> <input
+				type="checkbox" value="A1" name="sheet"> <input
+				type="checkbox" value="A2" name="sheet"> <input
+				type="checkbox" value="A3" name="sheet"> <input
+				type="checkbox" value="A4" name="sheet"> <input
+				type="checkbox" value="A5" name="sheet"> <input
+				type="checkbox" value="A6" name="sheet"> <input
+				type="checkbox" value="A7" name="sheet"> <input
+				type="checkbox" value="A8" name="sheet"> <br> <input
+				type="checkbox" value="B1" name="sheet"> <input
+				type="checkbox" value="B2" name="sheet"> <input
+				type="checkbox" value="B3" name="sheet"> <input
+				type="checkbox" value="B4" name="sheet"> <input
+				type="checkbox" value="B5" name="sheet"> <input
+				type="checkbox" value="B6" name="sheet"> <input
+				type="checkbox" value="B7" name="sheet"> <input
+				type="checkbox" value="B8" name="sheet"> <br> <input
+				type="checkbox" value="C1" name="sheet"> <input
+				type="checkbox" value="C2" name="sheet"> <input
+				type="checkbox" value="C3" name="sheet"> <input
+				type="checkbox" value="C4" name="sheet"> <input
+				type="checkbox" value="C5" name="sheet"> <input
+				type="checkbox" value="C6" name="sheet"> <input
+				type="checkbox" value="C7" name="sheet"> <input
+				type="checkbox" value="C8" name="sheet"> <br> <input
+				type="checkbox" value="D1" name="sheet"> <input
+				type="checkbox" value="D2" name="sheet"> <input
+				type="checkbox" value="D3" name="sheet"> <input
+				type="checkbox" value="D4" name="sheet"> <input
+				type="checkbox" value="D5" name="sheet"> <input
+				type="checkbox" value="D6" name="sheet"> <input
+				type="checkbox" value="D7" name="sheet"> <input
+				type="checkbox" value="D8" name="sheet"> <br> <input
+				type="checkbox" value="E1" name="sheet"> <input
+				type="checkbox" value="E2" name="sheet"> <input
+				type="checkbox" value="E3" name="sheet"> <input
+				type="checkbox" value="E4" name="sheet"> <input
+				type="checkbox" value="E5" name="sheet"> <input
+				type="checkbox" value="E6" name="sheet"> <input
+				type="checkbox" value="E7" name="sheet"> <input
+				type="checkbox" value="E8" name="sheet"> <br> <input
+				type="checkbox" value="F1" name="sheet"> <input
+				type="checkbox" value="F2" name="sheet"> <input
+				type="checkbox" value="F3" name="sheet"> <input
+				type="checkbox" value="F4" name="sheet"> <input
+				type="checkbox" value="F5" name="sheet"> <input
+				type="checkbox" value="F6" name="sheet"> <input
+				type="checkbox" value="F7" name="sheet"> <input
+				type="checkbox" value="F8" name="sheet">
+		</div>
+		<br> <br>
+		<div id="forticket">
+			<input type="submit" value="모바일 티켓 확인">
+		</div>
+	</div>
+ </form>
+</body>
+</html>
