@@ -72,13 +72,12 @@ a {
 			<br>
 			<h1>LOGIN</h1>
 			<div id="forms">
-				<input type="text" name="ids" placeholder="ID"><br> <input
-					type="text" name="pwds" placeholder="PASSWORD"><br>
+				<input type="text" name="ids" placeholder="ID"><br> 
+				<input type="text" name="pwds" placeholder="PASSWORD"><br>
 			</div>
 			<%
 			String idl = request.getParameter("ids");
 			String pwdl = request.getParameter("pwds");
-			String status = "";
 			%>
 			<%
 			Connection con = null;
