@@ -1,31 +1,19 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
 <style>
-#container {
-	text-align: center;
-	width: 600px;
-	height: 600px;
-	margin: 0 auto;
-}
+#container {text-align: center; width: 600px; height: 600px; margin: 0 auto;}
 
-#memo {
-	text-align: center;
-	background-color: grey;
-	color: white;
-}
+#memo {text-align: center; background-color: grey; color: white;}
 </style>
 </head>
 <body>
 	<jsp:useBean id="s" class="forjsp.bean" scope="page" />
 	<jsp:setProperty name="s" property="*" />
-	<%
-	request.setCharacterEncoding("euc-kr");
-	%>
+	<%request.setCharacterEncoding("euc-kr");%>
 
 	<div id="container">
 		<h1 style="padding-bottom: 3px;">Mobile Ticket</h1>
@@ -48,12 +36,8 @@
 		<%
 		String seat = request.getParameter("sheet");
 		%>
-		<h4>
-			seat
-			<%=seat%></h4>
-		<h4><jsp:getProperty name="s" property="day" />
-			예매 완료
-		</h4>
+		<h4>seat <%=seat%></h4>
+		<h4><jsp:getProperty name="s" property="day" /> 예매 완료</h4>
 		<br>
 	</div>
 
