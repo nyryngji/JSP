@@ -6,47 +6,17 @@
 <meta charset="EUC-KR">
 <title>Insert title here</title>
 <style>
-#container {
-	text-align: center;
-	background-color: white;
-	width: 1000px;
-	height: 600px;
-	margin: 0 auto;
-}
+#container {text-align: center; background-color: white; width: 1000px; height: 600px; margin: 0 auto;}
 
-#header {
-	width: 1000px;
-	margin: 0 auto;
-	padding: 0;
-}
+#header {width: 1000px; margin: 0 auto; padding: 0;}
 
-#header ul {
-	width: 1000px;
-	height: 50px;
-	margin: 0 auto;
-	padding-left: 0;
-}
+#header ul {width: 1000px; height: 50px; margin: 0 auto; padding-left: 0;}
 
-#header ul li {
-	width: 25%;
-	height: 50px;
-	color: black;
-	list-style: none;
-	float: left;
-	line-height: 50px;
-	font-size: 17px;
-}
+#header ul li {width: 25%; height: 50px; color: black; list-style: none; float: left; line-height: 50px; font-size: 17px;} 
 
-#forms input {
-	width: 300px;
-	height: 40px;
-	margin-bottom: 10px;
-}
+#forms input {width: 300px; height: 40px; margin-bottom: 10px;}
 
-a {
-	text-decoration: none;
-	color: black;
-}
+a {text-decoration: none; color: black;}
 </style>
 </head>
 <body>
@@ -60,8 +30,8 @@ a {
 		<form method="post">
 			<br>
 			<div id="forms">
-				<input type="text" name="newid" placeholder="ID"><br> <input
-					type="password" name="newpwd" placeholder="PASSWORD"><br>
+				<input type="text" name="newid" placeholder="ID"><br> 
+				<input type="password" name="newpwd" placeholder="PASSWORD"><br>
 				<input type="submit" value="가입완료">
 			</div>
 			<%
