@@ -2,15 +2,15 @@ package forjsp;
 
 public class bean {
 	
-	public int theater;
-	public String sheet;
-	public int title;
-	public String day;
-	public int hm;
-	public String ids;
-	public int pwds;
-	public String newid;
-	public int newpwd;
+	public int theater; // 영화관 value  
+	public String sheet; // 영화 좌석
+	public int title; // 영화 제목 value 
+	public String day; // 날짜 출력 
+	public int hm; // 시간 출력
+	public String ids; // 로그인 페이지에 입력한 아이디 
+	public int pwds; // 로그인 페이지에 입력한 비밀번호 
+	public String newid; // 새롭게 가입한 아이디
+	public int newpwd; // 새롭게 가입한 비밀번호
 	
 	String[] movies = {"압꾸정","데시벨","올빼미","블랙팬서: 와칸다 포에버","월드컵","유포자","오션스8","탑건: 매버릭"};
 	String[] theaters = {"서울 강남","서울 신촌","서울 코엑스","경기 고양스타필드","경기 수원","세종","부산 해운대","전라 순천"};
